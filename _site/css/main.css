@@ -1,0 +1,16 @@
+body {
+  font-size: 16px;
+}
+
+svg#navMenu {
+  fill: #fbf3f2;
+  height: 16px;
+}
+
+div#navSmall {
+  margin-top: 48px;
+}
+
+div#page_content {
+  margin-top: 48px;
+}

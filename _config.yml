@@ -1,0 +1,14 @@
+title: Mozilla Wireless Challenge 2017
+organization: ANSR
+description: >
+  Website for the ANSR Submission to the 2017 Mozilla Wireless Challenge
+
+baseurl: "/Wireless_Challenge_2017"
+#url: "https://ansr-uofu.github.io/"
+#url: "http://localhost:4000"
+url: ""
+
+markdown: kramdown
+
+sass:
+  style: expanded
