@@ -1,7 +1,7 @@
 # Site settings
 title: S.I.T.E. Pack (Stay In Touch Emergency Pack)
-url: https://ansr-uofu.github.io/
-#baseurl: "/Wireless_Challenge_2017"
+#url: https://ansr-uofu.github.io/
+baseurl: "/Wireless_Challenge_2017"
 # Google webmaster tools
 google_verify:
 
