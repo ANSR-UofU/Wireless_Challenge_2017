@@ -1,31 +1,119 @@
 ---
 ---
 
-$base-font-size: 16;
-$base-font-unit: px;
+$baseFontSize: 16;
+$baseFontUnit: px;
 
-$margin-top: $base-font-size + 32;
-$margin-top-unit: $base-font-unit;
+$menuFontSize: 16;
+$menuFontUnit: px;
+
+$menuPaddingVerticalSize: 18;
+$menuPaddingVerticalUnit: px;
+
+$menuPaddingHorizontalSize: 10;
+$menuPaddingHorizontalUnit: px;
+
+$marginTop: $menuFontSize + 2*$menuPaddingVerticalSize + 10;
+$marginTopUnit: $baseFontUnit;
+
+$colorBlack: #000000;
+$colorWhite: #ffffff;
+$color01: #f0f3f7;
+$color02: #cdd8e3;
+$color03: #9bb1c8;
+$color04: #698bac;
+$color05: #476481;
+$color06: #2c3e50; // Main Color
+$color07: #273747;
+$color08: #23313f;
+$color09: #1e2b37;
+$color10: #1a252f;
+$color11: #161f27;
+
+.w3-theme-l5 {color: $colorBlack !important; background-color: $color01 !important}
+.w3-theme-l4 {color: $colorBlack !important; background-color: $color02 !important}
+.w3-theme-l3 {color: $colorBlack !important; background-color: $color03 !important}
+.w3-theme-l2 {color: $colorWhite !important; background-color: $color04 !important}
+.w3-theme-l1 {color: $colorWhite !important; background-color: $color05 !important}
+.w3-theme {color: $colorWhite !important; background-color: $color06 !important}
+.w3-theme-d1 {color: $colorWhite !important; background-color: $color07 !important}
+.w3-theme-d2 {color: $colorWhite !important; background-color: $color08 !important}
+.w3-theme-d3 {color: $colorWhite !important; background-color: $color09 !important}
+.w3-theme-d4 {color: $colorWhite !important; background-color: $color10 !important}
+.w3-theme-d5 {color: $colorWhite !important; background-color: $color11 !important}
+
+.w3-theme-light {color: $colorBlack !important; background-color: $color01 !important}
+.w3-theme-dark {color: $colorWhite !important; background-color: $color11 !important}
+.w3-theme-action {color: $colorWhite !important; background-color: $color11 !important}
+
+
+.w3-text-theme {color: $color06 !important}
+.w3-border-theme {border-color: $color06 !important}
+
+.w3-hover-theme:hover {color: $colorWhite !important; background-color: $color06 !important}
+.w3-hover-text-theme {color: $color06 !important}
+.w3-hover-border-theme:hover {border-color: $color06 !important}
 
 body
 {
-  font-size: $base-font-size+$base-font-unit;
+  font-size: $baseFontSize+$baseFontUnit;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 
+nav
+{
+  font-size: $menuFontSize+$menuFontUnit;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+nav .navItem
+{
+  padding: $menuPaddingVerticalSize+$menuPaddingVerticalUnit $menuPaddingHorizontalSize+$menuPaddingHorizontalUnit !important;
 }
 
 svg#navMenu
 {
-  fill: #fbf3f2;
-  height: $base-font-size+$base-font-unit;
-
+  fill: $color01;
+  height: $baseFontSize+$baseFontUnit;
 }
 
 div#navSmall
 {
-  margin-top: $margin-top+$margin-top-unit;
+  margin-top: $marginTop+$marginTopUnit;
 }
 
 div#page_content
 {
-  margin-top: $margin-top+$margin-top-unit;
+  margin-top: $marginTop+$marginTopUnit;
+}
+
+div#footer
+{
+  min-height: $marginTop+$marginTopUnit;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  color: $color08;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anchor
+{
+  display: block;
+  height: $marginTop+$marginTopUnit;
+  margin-top: -$marginTop+$marginTopUnit;
+  visibility: hidden;
+}
+
+.w3-content
+{
+  max-width: 1170px;
 }

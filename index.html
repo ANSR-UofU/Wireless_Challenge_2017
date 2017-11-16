@@ -1,6 +1,17 @@
 ---
 layout: default
-title: Home
+title: S.I.T.E. Pack (Stay In Touch Emergency Pack)
+sections:
+  - name: Overview
+    id: overview
+    file: overview.html
+  - name: Details
+    id: details
+    file: details.html
+  - name: Team
+    id: team
+    file: team.html
 ---
-<h1>Test</h1>
-<p>Testing 123</p>
+{% for section in page.sections %}
+  {% include section.html id=section.id name=section.name file=section.file %}
+{% endfor %}
