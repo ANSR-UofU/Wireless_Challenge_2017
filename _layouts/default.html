@@ -39,7 +39,7 @@
                   {% endif %}
                 {% endfor %}
                 <div class="w3-right">
-                  {%if page.sections %}
+                  {%if page.sections and page.sections.size > 1 %}
                     {% for section in page.sections %}
                   <a class="w3-bar-item w3-button w3-hide-small navItem"
                      href="#{{ section.id }}">{{ section.name }}</a>

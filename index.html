@@ -11,6 +11,9 @@ sections:
   - name: Team
     id: team
     file: team.html
+  - name: Notes and References
+    id: notes
+    file: notes.html
 ---
 {% for section in page.sections %}
   {% include section.html id=section.id name=section.name file=section.file %}
